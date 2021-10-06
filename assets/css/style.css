@@ -852,6 +852,22 @@ blockquote>cite {
     border-bottom: 1.5px solid rgba(139, 144, 157, 0.30); */
     padding: 10px 0;
 }
+#owl-pricing h5.client-name{
+    margin: 0 0 25px !important;
+} 
+#owl-pricing p{
+    margin: 0;
+} 
+#owl-pricing span.client-designation{
+    font-weight: 600;
+} 
+.btn-primary{
+    background-color: #ED2924 !important;
+}
+.btn-primary:hover{
+    background-color: #ED2924 !important;
+    border-color: #ED2924;
+}
 .pricing-list li {
     margin: 5px  0;
     font-size: 15px;
@@ -1550,7 +1566,12 @@ blockquote>cite {
     width: 40px;
     height: 40px;
 }
-
+.page-center{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .preloader .spinner .double-bounce1,
 .preloader .spinner .double-bounce2 {
     position: absolute;
@@ -1558,7 +1579,7 @@ blockquote>cite {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #78cc6d;
+    background: #ED2924;
     opacity: 1;
     -webkit-animation: loader-bounce 2s infinite ease-in-out;
     animation: loader-bounce 2s infinite ease-in-out;
