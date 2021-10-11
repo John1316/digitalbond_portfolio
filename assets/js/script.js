@@ -39,6 +39,14 @@ jQuery(function ($) {
     /* ===================================
          Counter
     ====================================== */
+    $( function() {
+        $( "#datepicker").datepicker({
+            changeMonth: true,
+            changeYear: true,
+            showButtonPanel: true
+
+        });
+    });
 
 
     $('.count').each(function () {
