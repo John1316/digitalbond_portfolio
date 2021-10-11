@@ -1161,7 +1161,8 @@ blockquote>cite {
 #features .shape-triangle ,
 #about .shape-triangle ,
 #pricing .shape-triangle, 
-#portfolio .shape-triangle{
+#portfolio .shape-triangle,
+#reservation .shape-triangle{
     position: absolute;
     width: 0;
     height: 0;
@@ -2113,4 +2114,9 @@ input[type=datetime-local]::-webkit-inner-spin-button {
     color: red;
     text-align:center;
     position:relative;
+}
+#reserveAppointment{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
 }

@@ -93,9 +93,9 @@
                     </a>
                 </li>
                 <li>
-                    <a class="pt-trigger" data-animation="55" data-goto="7" href="#Appointment">
+                    <a class="pt-trigger" data-animation="55" data-goto="7" href="#reservation">
                         <i class="lni lni-timer"></i>
-                        <span>Appointment</span>
+                        <span style="font-size: 12px;">Reservation</span>
                     </a>
                 </li>
                 <li>
@@ -161,6 +161,7 @@
                         <span class="shape-circle"></span>
 
                     </div>
+
                 </section>
 
                 <!-- About -->
@@ -312,6 +313,8 @@
                         <span class="shape-plus"></span>
                         <span class="shape-circle"></span>
                     </div>
+                    <a id="reserveAppointment" href="#reservation" class="btn btn-primary text-white">Reserve Appointment</a>
+
                 </section>
 
                 <!-- Services -->
@@ -502,6 +505,8 @@
                         <span class="shape-plus"></span>
                         <span class="shape-circle"></span>
                     </div>
+                    <a id="reserveAppointment" href="#reservation" class="btn btn-primary text-white">Reserve Appointment</a>
+
                 </section>
 
                 <!-- Portfolio -->
@@ -609,6 +614,8 @@
                         <span class="shape-plus"></span>
                         <span class="shape-circle"></span>
                     </div>
+                    <a id="reserveAppointment" href="#reservation" class="btn btn-primary text-white">Reserve Appointment</a>
+
                 </section>
 
                 <!-- Pricing -->
@@ -963,10 +970,12 @@
                         <span class="shape-plus"></span>
                         <span class="shape-circle"></span>
                     </div>
+                    <a id="reserveAppointment" href="#reservation" class="btn btn-primary text-white">Reserve Appointment</a>
+
                 </section>
 
                 <!-- Clients -->
-                <section id="appointment" class="pt-page pt-page-7" data-id="appointment">
+                <section id="reservation" class="pt-page pt-page-7" data-id="reservation">
                     <div class="container">
                         <div class="row d-flex justify-content-center align-content-lg-center min-height-100vh">
 
@@ -976,15 +985,33 @@
                                     <div class="card-body">
 
                                         <div class="description">
-                                            <h4>Increase Revenue With Online Ordering (Egypt) 🇪🇬</h4>
-                                            <p><i class="fas fa-stopwatch"></i> 30 min</p>
+                                            <h4>Increase Revenue With Online Ordering Website</h4>
+                                            <!-- <p><i class="fas fa-stopwatch"></i> 30 min</p>
                                             <p><i class="fa fa-camera" aria-hidden="true"></i> Web conferencing details provided upon confirmation.
-                                            </p>
-                                            <p>Grow your business with 0% commission online ordering, courtesy of Zyda.
+                                            </p> -->
+                                            <p>Grow your business with 0% commission online ordering
                                             </p>
                                             <form action="" method="post">
                                                 <input type="datetime-local" class="w-100" name="" id="" required>
-                                                <button type="submit" class="btn btn-primary">Submit A appointment</button>
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text" placeholder="Name" required=""
+                                                            id="your_name" name="userName">
+                                                    </div>
+                                                
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="email" placeholder="Email" required=""
+                                                            id="your_email" name="userEmail">
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="number" placeholder="Phone Number" required=""
+                                                            id="phone_number" name="phone_number">
+                                                    </div>
+                
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" placeholder="More Information" id="information" name="information" cols="10"></textarea>
+                                                    </div>
+                                                <button type="submit" class="btn btn-primary">Submit an appointment</button>
                                             </form>
                                         </div>
                                             
