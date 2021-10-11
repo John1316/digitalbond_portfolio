@@ -1158,7 +1158,10 @@ blockquote>cite {
     border-bottom: 50px solid #ED2924;
     -webkit-animation: right-to-left 20s linear infinite;
 }
-#features .shape-triangle ,#pricing .shape-triangle, #portfolio .shape-triangle{
+#features .shape-triangle ,
+#about .shape-triangle ,
+#pricing .shape-triangle, 
+#portfolio .shape-triangle{
     position: absolute;
     width: 0;
     height: 0;
@@ -1213,10 +1216,22 @@ blockquote>cite {
     transform: rotate(55deg);
     -webkit-animation: rotating 20s linear infinite;
 }
-#features .shape-plus , #contact .shape-plus, #pricing .shape-plus   , #portfolio .shape-plus  {
+#features .shape-plus , #contact .shape-plus  , #portfolio .shape-plus  {
     position: absolute;
     top: 10%;
     left: 13%;
+    border-radius: 1px;
+    background: #ED2924;
+    height: 40px;
+    width: 5px;
+    opacity: .6;
+    transform: rotate(55deg);
+    -webkit-animation: rotating 20s linear infinite;
+}
+#pricing .shape-plus  {
+    position: absolute;
+    top: 10%;
+    left: 2%;
     border-radius: 1px;
     background: #ED2924;
     height: 40px;

@@ -39,14 +39,6 @@ jQuery(function ($) {
     /* ===================================
          Counter
     ====================================== */
-    $( function() {
-        $( "#datepicker").datepicker({
-            changeMonth: true,
-            changeYear: true,
-            showButtonPanel: true
-
-        });
-    });
 
 
     $('.count').each(function () {
@@ -83,7 +75,7 @@ jQuery(function ($) {
         dots: false,
         nav: true,
         autoplay:true,
-        autoplayTimeout:5000,
+        autoplayTimeout:9000,
         navContainer: "#client-nav",
         responsive: {
             991: {
