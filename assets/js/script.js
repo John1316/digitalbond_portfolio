@@ -39,8 +39,12 @@ jQuery(function ($) {
     /* ===================================
          Counter
     ====================================== */
-
-
+    function isInputNumber(event) {
+        var char = String.fromCharCode(event.which);
+        if(!(/[0-9]/.test(char))){
+            event.preventDefault();
+        }
+    }
     $('.count').each(function () {
         $(this).appear(function () {
             $(this).prop('Counter', 0).animate({
