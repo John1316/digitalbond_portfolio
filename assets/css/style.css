@@ -1166,7 +1166,7 @@ blockquote>cite {
     position: absolute;
     width: 0;
     height: 0;
-    bottom: 8%;
+    bottom: 10%;
     right: 5%;
     top: auto;
     left: auto;
@@ -2117,8 +2117,8 @@ input[type=datetime-local]::-webkit-inner-spin-button {
 }
 #reserveAppointment{
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 5px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
