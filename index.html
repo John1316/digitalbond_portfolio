@@ -993,27 +993,67 @@
                                             </p> -->
                                             <p>Grow your business with 0% commission online ordering
                                             </p>
-                                            <form action="" method="post">
-                                                <input type="datetime-local" class="w-100" name="" id="" required>
+                                            <!-- <form action="" method="post" id="reservationPost">
+                                                <div class="form-group">
+
+                                                    <input type="datetime-local" class="w-100" name="dateandtime" id="dateandtime" required>
+                                                </div>
+                                                <div id="resrvationForm2" class="">
+
                                                     <div class="form-group">
-                                                        <input class="form-control" type="text" placeholder="Name" required=""
-                                                            id="your_name" name="userName">
-                                                    </div>
-                                                
-                                                    <div class="form-group">
-                                                        <input class="form-control" type="email" placeholder="Email" required=""
-                                                            id="your_email" name="userEmail">
+                                                        <input class="w-100" type="text" placeholder="Name" required="" id="your_name" name="userName">
                                                     </div>
                                                     
                                                     <div class="form-group">
-                                                        <input class="form-control" onkeypress="isInputNumber(event)" pattern="^[0-9]+$" min="1" type="number" placeholder="Phone Number" required=""
+                                                        <input class="w-100" type="email" placeholder="Email" required="" id="your_email" name="userEmail">
+                                                    </div>
+                                                    
+                                                    <div class="form-group">
+                                                        <input class="w-100" onkeypress="isInputNumber(event)" pattern="^[0-9]+$" min="1" type="number" placeholder="Phone Number" required=""
                                                             id="phone_number" name="phone_number">
                                                     </div>
                 
                                                     <div class="form-group">
-                                                        <textarea class="form-control" placeholder="More Information" id="information" name="information" cols="10"></textarea>
+                                                        <textarea class="w-100" placeholder="More Information" id="information" name="information" cols="10"></textarea>
                                                     </div>
-                                                <button type="submit" class="btn btn-primary">Submit an appointment</button>
+                                                </div>
+                                                <button type="submit" class="reservationBtn btn btn-primary">Submit an appointment</button>
+                                            </form> -->
+                                            <form id="regForm" action="index.html" method="get">
+                                                <!-- One "tab" for each step in the form: -->
+                                                <div class="tab">
+                                                    <div class="form-group">
+                                                        <label for="name">Date of reservation</label>
+                                                        <input class="form-control" id="date" name="date" type="datetime-local" oninput="this.className = ''">
+                                                    </div>
+                                                </div>
+                                                <div class="tab">
+                                                    <div class="form-group">
+                                                        <label for="name">Name</label>
+                                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" oninput="this.className = ''">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="phone">Phone</label>
+                                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="number" oninput="this.className = ''">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="email">Email</label>
+                                                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" oninput="this.className = ''">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="">Message</label>
+                                                        <textarea class="form-control" name="message" placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-end no-gutters">
+                                                    <button type="button" id="prevBtn" class="btn btn-secondary" onclick="nextPrev(-1)">Previous</button>
+                                                    <button type="button" id="nextBtn" class="btn btn-primary" onclick="nextPrev(1)">Next</button>
+                                                </div>
+                                                <!-- Circles which indicates the steps of the form: -->
+                                                <div class="text-center step_container">
+                                                    <span class="step"></span>
+                                                    <span class="step"></span>
+                                                </div>
                                             </form>
                                         </div>
                                             
@@ -1130,27 +1170,6 @@
                     <a id="reserveAppointment" href="#reservation" class="btn btn-primary text-white">Reserve Appointment</a>
                 </section>
                 <!-- Thank you -->
-                <!-- <section id="thankyou" class="pt-page pt-page-8" data-id="thankyou">
-                    <div class="container">
-                        <div class="row align-items-lg-center">
-                            <div class="col-lg-12 text-center">
-                                <img src="assets/img/check.png" class="h-150" alt="">
-                                <h1 class="display-3 text-main">Thank you</h1>
-                                <p class="thanks-paragraph">Your message has been received and we will get in touch with you soon!</p>
-
-
-                                <p class="lead">
-                                <a class="btn btn-primary" href="index.html" role="button">Continue to Home page</a>
-                                </p>
-                            </div>
-                        </div>
-                        <span class="shape-square"></span>
-                        <span class="shape-triangle"></span>
-                        <span class="shape-plus"></span>
-                        <span class="shape-circle"></span>
-                    </div>
-                </section> -->
-
             </div>
             <!-- End of Home Subpage -->
 

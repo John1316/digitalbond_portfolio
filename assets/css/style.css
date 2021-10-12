@@ -2130,3 +2130,52 @@ margin: 0;
 input[type=number] {
 -moz-appearance: textfield;
 }
+#reservationPost input{
+    margin: 0;
+}
+/* Mark input boxes that gets an error on validation: */
+    input.invalid {
+        border: 2px solid #e8715c;
+        width: 100%;
+    }
+    input.form-control {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+    
+    /* Hide all steps by default: */
+    .tab {
+        display: none;
+    }
+    
+    /* Make circles that indicate the steps of the form: */
+    .step {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #ccc;
+        border: none;
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0.5;
+    }
+    
+    /* Mark the active step: */
+    .step.active {
+        opacity: 1;
+    }
+    .step {
+        opacity: 1;
+    }
+    .step_container{
+        margin-top: 20px;
+    }
+    /* Mark the steps that are finished and valid: */
+    .step.finish {
+        background-color: #ED2924;
+    }
+    .btn:focus{
+        color: #fff;
+    }
