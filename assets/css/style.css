@@ -1303,6 +1303,9 @@ blockquote>cite {
     right: 0; */
     font-weight: 600;
   }
+.accordion .mb-0 > button:focus {
+    color: #ED2924;
+  }
   
   .accordion .mb-0 > button[aria-expanded="true"]:before {
     content: "\f068";
@@ -1405,7 +1408,11 @@ blockquote>cite {
 .heading-area .sub-title {
     margin-bottom: 15px;
 }
-
+@media screen and (max-width: 450px) {
+    .min-height-70vh{
+        min-height: 70vh !important;
+    }
+}
 .dot-box:after {
     content: "";
     position: absolute;
@@ -2115,10 +2122,19 @@ input[type=datetime-local]::-webkit-inner-spin-button {
     text-align:center;
     position:relative;
 }
-#reserveAppointment{
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
+@media screen and (min-width:1024px) {
+    #reserveAppointment{
+        position: fixed;
+        bottom: 5px;
+        right: 5px;
+    }
+    
+}
+@media screen and (max-width:1024px) {
+    #reserveAppointment{
+        display: none;
+    }
+    
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

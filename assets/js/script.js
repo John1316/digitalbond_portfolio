@@ -145,7 +145,7 @@ jQuery(function ($) {
                 cols: 3,
             }, {
                 width: 767,
-                cols: 2,
+                cols: 1,
             }, {
                 width: 480,
                 cols: 1,
