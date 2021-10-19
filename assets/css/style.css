@@ -2026,7 +2026,7 @@ blockquote>cite {
 
     .site-nav {
         position: fixed;
-        width: 80px;
+        width: 100px;
         top: 0;
         left: -90px;
         height: 100vh;
